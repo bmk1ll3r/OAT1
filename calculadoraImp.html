@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Impostos</title>
+    <link rel="stylesheet" href="normal.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header-principal">
+        <h1>Desenvolvimento Front-End</h1>
+        <button id="botaoTema" class="botao">🌙 Modo Escuro</button>
+        <nav class="nav-menu">
+            <a href="index.html">Home</a> |
+            <a href="somaNumero.html">Soma Número</a> |
+            <a href="calcularIdade.html">Calcular Idade</a> |
+            <a href="conversorMoedas.html">Conversor Dolar</a> |
+            <a href="conversorTemp.html">Conversor Fahrenheit</a> |
+            <a href="calculadoraImp.html">Calcular Impostos</a> |
+            <a href="calculadoraJuros.html">Calcular Juros</a>
+        </nav>
+    </header>
+    <main class="main-container">
+        <div class="caixaPadrao">
+            <h1>Calculadora de Imposto</h1><br>
+            <p>Digite o valor para ser calculado o Imposto.</p><br>
+            <ul>
+                <li><input type="text" name="valor" id="valor" placeholder="R$"></li><br>
+                <li><input type="button" id="botaoImposto" value="Calcular" class="botao"></li><br>
+                <li>Resultado:</li><br>
+                <li><input type="text" name="result" id="result" readonly></li>
+            </ul>
+        </div>
+    </main><hr>
+    <footer>
+        <br><p>Desenvolvido por ©Bruno S. Melo</p>
+    </footer>
+</body>
+</html>

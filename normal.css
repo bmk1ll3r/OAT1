@@ -1,0 +1,209 @@
+/* Paleta de cores e variaveis pagina padrao */
+:root {
+  --bg-color: #fffdf2;
+  --text-color: #111;
+  --card-bg: #e7e2c2;
+  --header-bg: #ebd768;
+  --input-bg: #fff;
+  --input-text: #111;
+}
+
+/* Modo Escuro */
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+  --card-bg: #1e1e1e;
+  --header-bg: #2d2d2d;
+  --input-bg: #333;
+  --input-text: #f0f0f0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header-principal {
+  padding: 40px 20px 20px 20px;
+  text-align: center;
+  background-color: var(--header-bg);
+  border-bottom: 2px solid #d8c455;
+  position: relative; 
+}
+
+
+#botaoTema {
+  position: absolute;
+  top: 20px;   
+  right: 20px;  
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+.nav-menu {
+  font-size: 16px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.nav-menu a:hover {
+  color: #4a90e2;
+}
+
+.main-container {
+  flex: 1;
+  padding: 30px 15px;
+}
+
+#curriculo {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#fotobruno {
+  display: block;
+  margin: 20px auto;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  object-fit: cover;
+}
+
+.secao-curriculo {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.secao-curriculo h3 {
+  text-align: center;
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+.secao-curriculo h4 {
+  margin-top: 15px;
+  color: var(--text-color);
+}
+
+.secao-curriculo p {
+  padding: 5px 0;
+  color: var(--text-color);
+}
+
+.secao-curriculo hr {
+  width: 100px;
+  display: block;
+  margin: 5px auto 15px auto;
+  border: 1px solid #b5b093;
+}
+
+.secao-curriculo ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.secao-curriculo ul li {
+  margin-bottom: 6px;
+  line-height: 1.4;
+  color: var(--text-color);
+}
+
+#conhecimentos {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+#conhecimentos li {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid #c9c364;
+  background-color: rgb(235, 232, 91);
+  color: #111;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: var(--header-bg);
+  color: var(--text-color);
+  border-top: 2px solid #d8c455;
+  font-size: 14px;
+}
+
+.caixaPadrao {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 50px auto;
+  max-width: 500px;
+  border-radius: 8px;
+  padding: 30px 15px;
+  background-color: var(--card-bg);
+  color: var(--text-color);
+}
+
+.caixaPadrao ul li {
+  list-style: none;
+}
+
+.caixaPadrao input {
+  height: 35px;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+  padding: 0 10px;
+  margin-top: 10px;
+  background-color: var(--input-bg);
+  color: var(--input-text);
+}
+
+.botao {
+  background-color: rgb(235, 232, 91);
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+}
+
+.botao:hover {
+  background-color: #c9c364;
+}
